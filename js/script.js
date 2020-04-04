@@ -50,6 +50,31 @@ $(function(){
     }
   );
 
+  $(".menu_link").click(
+    function(){
+      $(".about_overview").show();
+      $(".about_me").show();
+      $(".about_history").show();
+      var id = $(this).attr('id');
+      switch(id){
+        case "history_btn":
+          $(".about_overview").fadeOut();
+          $(".about_me").fadeOut();
+          break;
+
+        case "overview_btn":
+          $(".about_history").fadeOut();
+          $(".about_me").fadeOut();
+          break;
+
+        case "aboyt_us":
+          $(".about_history").fadeOut();
+          $(".about_overview").fadeOut();
+          break;
+      };
+    }
+  );
+
 
 
 });

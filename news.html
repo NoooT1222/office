@@ -8,51 +8,77 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Sawarabi+Mincho" rel="stylesheet">
 
+    <script>
+      (function(d) {
+        var config = {
+          kitId: 'afy0jmj',
+          scriptTimeout: 3000,
+          async: true
+        },
+        h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+      })(document);
+    </script>
+
   </head>
   <body>
-    <header>
-      <div class="header_menu1">
-        <div class="header_menu_btns">
-          <a href="index.html"><img src="pic/menu/logo.png" alt=""></a>
+    <div class="wrapper">
+      <header>
+        <div class="header_menu1">
+          <div class="header_menu_btns">
+            <a href="index.html"><img src="pic/menu/logo.png" alt=""></a>
 
-          <a class="menu_link" href="#">お知らせ</a>
-          <a class="menu_link" href="#">取り扱い乗務</a>
-          <a class="menu_link" href="#">当事務所について</a>
-          <a class="menu_link" href="#">料金</a>
-          <a class="menu_link" href="#">ご相談までの流れ</a>
-          <a class="menu_link" href="#">アクセス</a>
+            <a class="menu_link" href="news.html">お知らせ</a>
+            <a class="menu_link" href="practice_areas.html">取り扱い業務</a>
+            <a class="menu_link" href="about.html">当事務所について</a>
+            <a class="menu_link" href="fee.html">料金</a>
+            <a class="menu_link" href="flow.html">ご相談までの流れ</a>
+            <a class="menu_link" href="access.html">アクセス</a>
+            <a class="menu_link" href="inquiry.html">お問い合わせ</a>
 
-        </div>
-      </div>
-
-      <div class="header_menu2">
-        <div class="page_title center">
-          お知らせ
-        </div>
-      </div>
-    </header>
-
-
-      <div class="container">
-        <div class="news_box">
-
-          <div class="news_column">
-            <p class="news_date">2020/02/29</p>
-            <span class="op_cl">+</span>
-            <p class="news_title">開所スケジュール(４月)を公開しました</p>
-            <p class="news_content">開所スケジュールは<a href="">こちらから</a></p>
           </div>
-
-          <div class="news_column">
-            <p class="news_date">2020/02/20</p>
-            <span class="op_cl">+</span>
-            <p class="news_title">公式HPを更新しました</p>
-            <p class="news_content">公式HPを更新しました。</p>
-          </div>
-
         </div>
-      </div>
 
+        <div class="header_menu2">
+          <div class="page_title center">
+            お知らせ
+          </div>
+        </div>
+      </header>
+
+
+        <div class="container">
+          <div class="news_box">
+
+            <div class="news_column">
+              <p class="news_date">2020/02/29</p>
+              <span class="op_cl">+</span>
+              <p class="news_title">4月の開所スケジュールを公開しました</p>
+              <p class="news_content">開所スケジュールは<a href="">こちらから</a></p>
+            </div>
+
+            <div class="news_column">
+              <p class="news_date">2020/02/20</p>
+              <span class="op_cl">+</span>
+              <p class="news_title">公式HPを更新しました</p>
+              <p class="news_content">公式HPを更新しました。</p>
+            </div>
+
+          </div>
+        </div>
+
+
+
+
+
+    <footer>
+      <div class="footer_info">
+        ©NOMOTO LAW OFFICE<br>
+        〒107-0062 東京都港区南青山5-4-30 澁澤ビル8階<br>
+        TEL:03-3414-0827
+      </div>
+    </div>
+
+    </footer>
 
 
     <script src="js/script.js"></script>

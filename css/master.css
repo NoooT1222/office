@@ -1,8 +1,7 @@
 
 body{
   margin: 0;
-  font-family: "Sawarabi Mincho";
-
+  font-family: fot-cezanne-pron, sans-serif;
 }
 
 html{
@@ -14,6 +13,7 @@ html{
   margin: 0 auto;
   width: 95vw;
   max-width: 800px;
+  font-size: 20px;
 }
 
 /*インデックス背景*/
@@ -56,7 +56,7 @@ html{
 
 /*インデックスメニュー*/
 .index_menu{
-  background-color: #303030;
+  background-color: #46B190;
   margin-left: auto;
   color: white;
   z-index: 9;
@@ -104,11 +104,17 @@ html{
   font-size: 20px;
   line-height: 92px;
   color: white;
+  font-family: a-otf-midashi-mi-ma31-pr6n, serif;
+  font-weight: 600;
+  font-style: normal;
 }
 
 .page_title2{
   font-size: 40px;
   color: black;
+  font-family: a-otf-midashi-mi-ma31-pr6n, serif;
+  font-weight: 600;
+  font-style: normal;
 }
 
 /*ヘッダー*/
@@ -122,7 +128,7 @@ html{
   height: 92px;
   line-height: 92px;
   width: 100%;
-  background-color: #522886;
+  background-color: #46B190;
   display: inline-block;
 }
 
@@ -135,15 +141,20 @@ html{
 
 .page_menu a{
   line-height: 92px;
-  font-family: "Noto Sans JP";
   display: block;
   margin-left: 30px;
-
+  font-family: fot-cezanne-pron, sans-serif;
+  font-weight: 500;
+  font-style: normal;
 }
 
 .page_menu{
   margin-left: 40px;
   display: flex;
+}
+
+.page_menu span{
+  text-decoration: underline white;
 }
 
 .header_menu_btns{
@@ -167,7 +178,33 @@ html{
   margin-left: 0;
   margin-right: auto;
 
-  font-family: "Noto Sans JP";
+  font-family: fot-cezanne-pron, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+/*フッター*/
+.wrapper{
+  min-height: 100vh;
+  position: relative;/*←相対位置*/
+  padding-bottom: 140px;
+  box-sizing: border-box;/*←全て含めてmin-height:100vhに*/
+
+}
+
+footer{
+  width: 100%;
+  background-color: #303030;
+
+  position: absolute;/*←絶対位置*/
+  bottom: 0; /*下に固定*/
+
+}
+
+.footer_info{
+  margin-top: 20px;
+  margin-left: 40px;
+  color: white;
 }
 
 /*ニュース*/
@@ -189,13 +226,17 @@ html{
 
 .news_date {
   font-size: 20px;
-  font-family: "Sawarabi Mincho";
+  line-height: 25px;
+
   margin: 10px 20px 0 20px;
 }
 
 .news_title {
   font-size: 40px;
-  font-family: "Sawarabi Mincho";
+  font-family: a-otf-futo-min-a101-pr6n, serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 55px;
   margin: 0 20px 0 20px;
 }
 
@@ -203,7 +244,9 @@ html{
   font-size: 20px;
   margin: 0 20px 10px 20px;
   display: none;
-  font-family: "Noto Sans JP"
+  font-family: kozuka-gothic-pr6n, sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .news_column span{
@@ -218,5 +261,80 @@ html{
 .container img{
   width: 100%;
   display: block;
-  margin-top: 20px;
+}
+
+/*当事務所について*/
+.history_table,.overview_table,.access_table{
+  width: 90%;
+  margin: 0 auto;
+  display: block;
+}
+
+.history_table_line,.overview_table_line,.access_table_line{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #c0c0c0;
+}
+
+.history_year,.overview_title{
+  width: 20%;
+  text-align: center;
+  text-decoration: underline orange;
+}
+
+.history_contents,.overview_contents{
+  width: 50%;;
+}
+
+.about_lawyer{
+  display: flex;
+  margin-top: 15px;
+
+}
+
+.about_lawyer_img{
+  padding-right: 20px;
+}
+
+.lawyer_name{
+  font-size: 30px;
+  font-family: a-otf-midashi-mi-ma31-pr6n, serif;
+  line-height: 20px;
+  padding-bottom: 20px;
+}
+
+.lawyer_name span{
+  font-size: 10px;
+  line-height: 5px;
+  color: #3cb371;
+  font-family: kozuka-gothic-pr6n, sans-serif;
+}
+
+/*アクセス*/
+.gmap iframe{
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.gmap{
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+}
+
+.access_number{
+  width: 10%;
+  text-align: center;
+  text-decoration: underline orange;
+}
+
+.access_contents{
+  width: 85%;;
 }
