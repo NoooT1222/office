@@ -29,6 +29,15 @@ $(function(){
     }
   );
 
+  $(".pa_cells").hover(
+    function(){
+      $(this).css('background-color','#c0c0c0');
+    },
+    function(){
+      $(this).css('background-color','white');
+    }
+  );
+
   $(".news_column").click(function(){
   var $answer = $(this).find(".news_content");
   if($answer.hasClass("news_open")){
@@ -75,6 +84,20 @@ $(function(){
       };
     }
   );
+
+  $(".example").click(function(){
+  var $answer = $(this).find(".example_answer");
+  if($answer.hasClass("ans_open")){
+    $answer.removeClass("ans_open");
+    $answer.slideUp();
+    $(this).find(".op_cl").text("+");
+  } else {
+    $answer.addClass("ans_open");
+    $answer.slideDown();
+    $(this).find(".op_cl").text("-");
+  }
+  });
+
 
 
 

@@ -12,8 +12,16 @@ html{
 .container{
   margin: 0 auto;
   width: 95vw;
-  max-width: 800px;
+  max-width:1000px;
   font-size: 20px;
+}
+
+.container span{
+  font-size: 30px;
+  color: #191970;
+  font-family: kozuka-gothic-pr6n, sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
 
 /*インデックス背景*/
@@ -108,21 +116,33 @@ html{
 }
 
 .page_title{
-  font-size: 20px;
-  line-height: 92px;
-  color: white;
-  font-family: a-otf-midashi-mi-ma31-pr6n, serif;
-  font-weight: 600;
-  font-style: normal;
 }
 
 .page_title2{
+  font-size: 20px;
+  color: black;
+}
+
+.page_title2 span{
   font-size: 40px;
   color: black;
-  font-family: a-otf-midashi-mi-ma31-pr6n, serif;
-  font-weight: 600;
+  font-family: a-otf-futo-min-a101-pr6n, serif;
+  font-weight: 400;
   font-style: normal;
+  padding-bottom: 10px;
+  display: inline-block;
 }
+
+
+.page_title3{
+  width: 100vw;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
 
 /*ヘッダー*/
 .header_menu1{
@@ -146,23 +166,44 @@ html{
 
 }
 
-.page_menu a{
-  line-height: 92px;
+.page_menu_btns{
+  display: flex;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 1000px;
+}
+
+.page_title{
+  height: 100%;
+  margin-left: 0;
+  margin-right: auto;
+  width: auto;
+  font-size: 20px;
+
+  color: white;
+  font-family: a-otf-midashi-mi-ma31-pr6n, serif;
+  font-weight: 600;
+  font-style: normal;
+
+}
+
+.page_menu_btns a{
+  height: 100%;
+
+  font-size: 16px;
   display: block;
-  margin-left: 30px;
+  margin-left: 0;
+  margin-right: auto;
+
   font-family: fot-cezanne-pron, sans-serif;
   font-weight: 500;
   font-style: normal;
 }
 
-.page_menu{
-  margin-left: 40px;
-  display: flex;
-}
 
-.page_menu span{
-  text-decoration: underline white;
-}
+
+
 
 .header_menu_btns{
   display: flex;
@@ -268,6 +309,89 @@ footer{
 .container img{
   width: 100%;
   display: block;
+}
+
+.pa_table{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+
+.pa_cells{
+  width: 40%;
+  height: 120px;
+  margin: 15px;
+  border: 1px solid #c0c0c0;
+  position: relative;
+  z-index: 1; /* 必要であればリンク要素の重なりのベース順序指定 */
+}
+
+.pa_cells a{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-indent:-999px;
+  z-index: 2; /* 必要であればリンク要素の重なりのベース順序指定 */
+}
+
+.pa_title{
+  text-align: center;
+  font-family: a-otf-futo-min-a101-pr6n, serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.pa_image img{
+  display: block;
+  margin: 0 auto;
+  width: 70px;
+  padding: 10px;
+}
+
+.loan_title{
+  background-image: url("../pic/p_a/loan/title.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.inheritance_title{
+  background-image: url("../pic/p_a/inheritance/title.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.example{
+  border: 1px solid #c0c0c0;
+  margin-bottom: 10px;
+}
+
+.example_title{
+  font-size: 20px;
+  margin: 0 20px 0 20px;
+  font-family: kozuka-gothic-pr6n, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  position:relative;
+}
+
+.example_answer{
+  display: none;
+  margin: 0 20px 0 20px;
+
+}
+
+.op_cl{
+  position: absolute;
+  top: 9px;
+  right: 5px;
+  color:#ccc;
+  line-height: 20px;
+  font-size: 20px;
 }
 
 /*当事務所について*/
