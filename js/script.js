@@ -10,7 +10,7 @@ $(function(){
       $(".loading").animate({
         'width':'50vw'
       },1000);
-    },1000);
+    },2000);
 
     setTimeout(function(){
       $(".menu_btns").slideDown();
