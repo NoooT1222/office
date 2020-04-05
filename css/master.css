@@ -126,21 +126,42 @@ html{
 .page_title2 span{
   font-size: 40px;
   color: black;
-  font-family: a-otf-futo-min-a101-pr6n, serif;
-  font-weight: 400;
+  font-family: a-otf-ryumin-pr6n, serif;
+  font-weight: 500;
   font-style: normal;
   padding-bottom: 10px;
+  padding-top: 10px;
   display: inline-block;
 }
 
 
 .page_title3{
   width: 100vw;
-  height: 300px;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 15px;
+}
+
+.page_title4{
+  display: flex;
+  align-items: center;
+  font-size: 40px;
+  color: black;
   margin-top: 10px;
+  margin-bottom: 10px;
+
+}
+
+.page_title4 p{
+  padding-left: 10px;
+  margin-left:20px;
+  display: block;
+  border-left: solid white 3px;
+  font-family: a-otf-ryumin-pr6n, serif;
+  font-weight: 300;
+  font-style: normal;
+
 }
 
 
@@ -157,27 +178,19 @@ html{
   width: 100%;
   background-color: #46B190;
   display: inline-block;
-}
-
-.header_menu2_container{
-  width: 1000px;
-  margin: 0 auto;
-  display: flex;
 
 }
 
 .page_menu_btns{
   display: flex;
-  margin: 0 auto;
-  flex-wrap: wrap;
-  justify-content: center;
+  justify-content: start;
   width: 1000px;
 }
 
 .page_title{
   height: 100%;
   margin-left: 0;
-  margin-right: auto;
+  margin-right: 20px;
   width: auto;
   font-size: 20px;
 
@@ -192,9 +205,9 @@ html{
   height: 100%;
 
   font-size: 16px;
-  display: block;
+  display: inline-block;
   margin-left: 0;
-  margin-right: auto;
+  margin-right: 10px;
 
   font-family: fot-cezanne-pron, sans-serif;
   font-weight: 500;
@@ -357,12 +370,16 @@ footer{
   background-image: url("../pic/p_a/loan/title.jpg");
   background-size: cover;
   background-attachment: fixed;
+  height: 300px;
+
 }
 
 .inheritance_title{
   background-image: url("../pic/p_a/inheritance/title.jpg");
   background-size: cover;
   background-attachment: fixed;
+  height: 300px;
+
 }
 
 .example{
@@ -395,13 +412,13 @@ footer{
 }
 
 /*当事務所について*/
-.history_table,.overview_table,.access_table{
-  width: 90%;
+.history_table,.overview_table,.access_table,.paid_contact_table{
+  width: 100%;
   margin: 0 auto;
   display: block;
 }
 
-.history_table_line,.overview_table_line,.access_table_line{
+.history_table_line,.overview_table_line,.access_table_line,.paid_contac_table_line{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -410,14 +427,14 @@ footer{
   border-bottom: 1px solid #c0c0c0;
 }
 
-.history_year,.overview_title{
+.history_year,.overview_title,.paid_contac_title{
   width: 20%;
   text-align: center;
   text-decoration: underline orange;
 }
 
-.history_contents,.overview_contents{
-  width: 50%;;
+.history_contents,.overview_contents,.paid_contac_contents{
+  width: 70%;;
 }
 
 .about_lawyer{
@@ -442,6 +459,66 @@ footer{
   line-height: 5px;
   color: #3cb371;
   font-family: kozuka-gothic-pr6n, sans-serif;
+}
+
+.history_title{
+  height: 100px;
+  background-color: #fdf5e6;
+}
+
+.overview_main_title{
+  height: 100px;
+  background-color: #fdf5e6;
+}
+
+.about_me_title{
+  height: 100px;
+  background-color: #fdf5e6;
+}
+
+/*相談までの流れ*/
+.flow_contact{
+  padding-bottom: 15px;
+}
+
+.first_contact_title{
+  height: 100px;
+  background-color: #b0e0e6;
+}
+
+.flow_first_contact_table{
+  border: 1px solid #c0c0c0;
+  margin-top: 5px;
+  padding: 12px;
+}
+
+.paid_contact_title{
+  height: 100px;
+  background-color: #fffacd;
+}
+
+.paid_contact_table{
+  padding-top: 15px;
+}
+
+.telephone_contact_title{
+  height: 100px;
+  background-color: #dda0dd;
+}
+
+.regular_telephone_contact_title{
+  height: 100px;
+  background-color: #8fbc8f;
+}
+
+.mail_contact_title{
+  height: 100px;
+  background-color: #d3d3d3;
+}
+
+.trip_contact_title{
+  height: 100px;
+  background-color: #b0c4de;
 }
 
 /*アクセス*/
