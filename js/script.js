@@ -14,7 +14,8 @@ $(function(){
 
     setTimeout(function(){
       $(".menu_btns").slideDown();
-    },2000);
+      $(".index_menu").css('z-index','10');
+    },3000);
 
 
   });
