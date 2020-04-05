@@ -447,6 +447,11 @@ footer{
   padding-right: 20px;
 }
 
+.about_lawyer_img img{
+  width: 200px;
+
+}
+
 .lawyer_name{
   font-size: 30px;
   font-family: a-otf-midashi-mi-ma31-pr6n, serif;
