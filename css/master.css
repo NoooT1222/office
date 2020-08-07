@@ -24,62 +24,92 @@ html{
   font-style: normal;
 }
 
-/*インデックス背景*/
-
-/*インデックス構造を作る*/
-.loading{
+/*インデックス*/
+.index_wrapper{
   width: 100vw;
   height: 100vh;
-  z-index: 10;
-  margin-right: auto;
-  position: fixed;
-  top: 0;
-  left: 0;
 
-  background-image: url("shibuya_2.png");
-  background-size: cover;
-  background-attachment: fixed
-
+  display: flex;
 }
 
-.loading_logo{
-  width: 100vw;
-  height: 100vh;
+.index_left{
+  background-color: #30B9F0;
+  width: 50%;
+  height: 100%;
+  position: relative;
 }
 
-.loading img{
-  width: 20vw;
+.index_right{
+  width: 50%;
+  height: 100%;
 
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  margin: auto;
-
-
+  overflow: hidden;
 }
 
-.logo{
-  display: none;
-}
-
-.for_index{
-
+.index_right img{
+  height: 100%;
 }
 
 /*インデックスメニュー*/
-.index_menu{
-  background-color: #46B190;
-  margin-left: auto;
+.index_left_menu{
+  width: 50%;
+  height: 35%;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.index_logo img{
+  height: 4vh;;
+}
+
+.index_menu_contents{
+  font-family: a-otf-ryumin-pr6n, serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 2vh;
+
+  padding: 2px;
+}
+
+.index_menu_contents a{
   color: white;
-  z-index: 1;
-  width: 50vw;
-  height: 100vh;
-  position: relative;
+  text-decoration: none;
+}
+
+.index_menu_contents img{
+  height: 2vh;
+  padding-right: 5px;
+  vertical-align: text-top;
 
 }
 
+
+
+
+/*インデックス構造を作る*/
+
+
+.display_none{
+  display: none;
+}
+
+
+.green{
+  background-color: #46B190;
+}
+
+.tomato{
+  background-color: #ff6347;
+}
+
+.royalblue{
+  background-color: #4169e1;
+
+}
 
 .menu_btn img{
   height: 40px;
@@ -111,12 +141,10 @@ html{
 
 .menu_link{
   text-decoration: none;
-  color: white;
+  color: black;
   font-size: 18px;
 }
 
-.page_title{
-}
 
 .page_title2{
   font-size: 20px;
@@ -136,7 +164,7 @@ html{
 
 
 .page_title3{
-  width: 100vw;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -146,7 +174,7 @@ html{
 .page_title4{
   display: flex;
   align-items: center;
-  font-size: 40px;
+  font-size: 30px;
   color: black;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -169,15 +197,17 @@ html{
 .header_menu1{
   height: 64px;
   width: 100%;
-  background-color: #303030;
+  background-color: #f7f7f7;
 }
 
 .header_menu2{
   height: 92px;
   line-height: 92px;
   width: 100%;
-  background-color: #46B190;
+  background-color: white;
   display: inline-block;
+  border-bottom: 1px solid #e5e5e5;
+  border-top: 1px solid #e5e5e5;
 
 }
 
@@ -190,16 +220,23 @@ html{
 .page_title{
   height: 100%;
   margin-left: 0;
-  margin-right: 20px;
+  margin-right: 30px;
   width: auto;
   font-size: 20px;
 
-  color: white;
+  color: black;
   font-family: a-otf-midashi-mi-ma31-pr6n, serif;
   font-weight: 600;
   font-style: normal;
 
 }
+
+.page_title img{
+  height: 20px;
+  vertical-align: text-top;
+  margin-top: 4px;
+}
+
 
 .page_menu_btns a{
   height: 100%;
@@ -207,7 +244,7 @@ html{
   font-size: 16px;
   display: inline-block;
   margin-left: 0;
-  margin-right: 10px;
+  margin-right: 20px;
 
   font-family: fot-cezanne-pron, sans-serif;
   font-weight: 500;
@@ -255,17 +292,17 @@ html{
 
 footer{
   width: 100%;
-  background-color: #303030;
+  background-color: #f7f7f7;
 
   position: absolute;/*←絶対位置*/
   bottom: 0; /*下に固定*/
-
+  border-top: 1px solid #e5e5e5;
 }
 
 .footer_info{
   margin-top: 20px;
   margin-left: 40px;
-  color: white;
+  color: black;
 }
 
 /*ニュース*/
@@ -319,10 +356,6 @@ footer{
 }
 
 /*取扱業務*/
-.container img{
-  width: 100%;
-  display: block;
-}
 
 .pa_table{
   display: flex;
@@ -467,17 +500,17 @@ footer{
 }
 
 .history_title{
-  height: 100px;
+  height: 75px;
   background-color: #fdf5e6;
 }
 
 .overview_main_title{
-  height: 100px;
+  height: 75px;
   background-color: #fdf5e6;
 }
 
 .about_me_title{
-  height: 100px;
+  height: 75px;
   background-color: #fdf5e6;
 }
 
@@ -487,7 +520,7 @@ footer{
 }
 
 .first_contact_title{
-  height: 100px;
+  height: 75px;
   background-color: #b0e0e6;
 }
 
@@ -498,7 +531,7 @@ footer{
 }
 
 .paid_contact_title{
-  height: 100px;
+  height: 75px;
   background-color: #fffacd;
 }
 
@@ -507,22 +540,22 @@ footer{
 }
 
 .telephone_contact_title{
-  height: 100px;
+  height: 75px;
   background-color: #dda0dd;
 }
 
 .regular_telephone_contact_title{
-  height: 100px;
+  height: 75px;
   background-color: #8fbc8f;
 }
 
 .mail_contact_title{
-  height: 100px;
+  height: 75px;
   background-color: #d3d3d3;
 }
 
 .trip_contact_title{
-  height: 100px;
+  height: 75px;
   background-color: #b0c4de;
 }
 
